@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>MaxiCom - Internedt Provider HTML template</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+    <link rel="stylesheet" href="css/testimonie.css">
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+
+    <!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+    <div class="preloader">
+        <div class="preloader_image"></div>
+    </div>
+
+    <!-- search modal -->
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="widget widget_search">
+            <form class="form-inline d-flex justify-content-center md-form form-sm mt-0 search-form"
+                action="http://webdesign-finder.com/" method="get">
+                <input class="form-control form-control-sm ml-3 w-75 border-0" type="text" placeholder="Search"
+                    aria-label="Search">
+                {{!-- <i class="fas fa-search" aria-hidden="true"></i> --}}
+            </form>
+        </div>
+    </div>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+        <div id="box_wrapper">
+
+            <!-- template sections -->
+
+            <!--topline section visible only on small screens|-->
+
+            <section class="page_topline ls s-borderbottom c-my-20">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-md-left text-center">
+                            <ul class="top-includes">
+                                <li>
+                                    <span class="icon-inline">
+                                        <span class="icon-styled color-main fs-14">
+                                            <i class="fa fa-phone"></i>
+                                        </span>
+                                        <span class="small-text">
+                                            <a href="tel:+2349020455349">+234 902 045 5349</a>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon-inline">
+                                        <span class="icon-styled color-main fs-14">
+                                            <i class="fa fa-pen"></i>
+                                        </span>
+                                        <span class="small-text">
+                                            <a href="mailto:info@firstpavitech.com">info@firstpavitech.com</a>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center text-md-right d-none d-md-block">
+                            <ul class="top-includes">
+                                <li>
+                                    <span class="icon-inline">
+                                        <span class="icon-styled color-main2 fs-14">
+                                            <img src="image/fp-logo-big.png" width="20" height="20"
+                                                alt="FirstPavilionLogo">
+                                        </span>
+                                        <span class="small-text">
+                                            <span class="small-text">
+                                                <a class="hover-main2" href="/"> First Pavilion Technologies</a>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon-inline">
+                                        <span class="icon-styled color-main2 fs-14">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        <span class="small-text">
+                                            <a class="hover-main2" href="/login"> Login in</a>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--eof topline-->
+
+            <div class="header_absolute header_layout_1">
+                <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+                <header class="page_header ls justify-nav-end">
+                    <div class="container-fluid">
+                        <div class=" justify-content-center">
+                            <div class="col-xl-8 col-lg-8 col-md-7 col-1">
+                                <div class="nav-wrap">
+
+                                    <!-- main nav start -->
+                                    <nav class="top-nav">
+                                        <ul class="nav sf-menu">
+
+                                            <li class="active">
+                                                <a href="/">Home</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/about">About Us</a>
+                                            </li>
+                                            <!-- eof pages -->
+                                            {{!-- 
+                                            <li>
+                                                <a href="/services">Our Services</a>
+                                            </li> --}}
+
+                                            <li>
+                                                <a href="/products">Our Products</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="/space">Co-working Space</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/yharah">Yharah</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/academy">IO Academy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/beleful">Beleful</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="/contact">Contact Us</a>
+                                            </li>
+                                        </ul>
+
+                                    </nav>
+                                    <!-- eof main nav -->
+
+                                    <!--hidding includes on small devices. They are duplicated in topline-->
+                                    <ul class="top-includes d-none d-xl-block search-icon">
+
+                                        <li>
+                                            <!--modal search-->
+                                            <span>
+                                                <a href="" class="search_modal_button">
+                                                    <i class="fa fa-search"></i>
+                                                </a>
+                                            </span>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header toggler -->
+                    <span class="toggle_menu"><span></span></span>
+                </header>
+
+                <div class="page_header_wrapper main-header-side ">
+                    <div class="page_header_side header_slide header_side_right aaaa ls">
+                        <span class="toggle_menu toggle_menu_side header-slide"><span></span></span>
+                        <div class="scrollbar-macosx">
+                            <div class="side_header_inner">
+                                <div class="header-side-menu">
+                                    <!-- main side nav start -->
+                                    <nav class="mainmenu_side_wrapper">
+                                        <ul class="nav menu-click">
+                                            <li>
+                                                <a href="faq.html">
+                                                    <i class="color-main7 fa fa-question-circle"></i>
+                                                    FAQ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="booking-form.html">
+                                                    <i class="color-main7 fa fa-paper-plane"></i>
+                                                    Submit a ticket
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="terms_of_use.html">
+                                                    <i class="color-main7 fa fa-rocket"></i>
+                                                    Terms Of Use
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="availability-map.html">
+                                                    <i class="color-main7 fa fa-file-text-o"></i>
+                                                    Terms of Service
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">
+                                                    <i class="color-main7 fa fa-phone"></i>
+                                                    call me back
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <!-- eof main side nav -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facebook-messeger d-flex align-items-center hero-bg">
+                            <img src="images/messeger.png" alt="">
+                            <a href="https://messenger.com" class="small-text">
+                                facebook messeger
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="page_slider">
+                <div id="particles-js"></div>
+                <div class="flexslider" data-nav="false">
+                    <ul class="slides">
+                        <li class="ds">
+                            <img src="images/slide01.jpg" alt="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="intro_layers_wrapper">
+                                            <div class="intro_layers">
+                                                <div class="intro_layer" data-animation="fadeInRight">
+                                                    <h1 class="intro_featured_word">We<br>provide<br>Enterprise<br>
+                                                        Solutions</h1>
+                                                    <h5 class="intro_before_featured_word text-uppercase fw-200">
+                                                        Flexible<br> Co-working space
+                                                    </h5>
+                                                </div>
+                                                <div class="intro_layer" data-animation="fadeInUp">
+                                                    <p class="text-uppercase intro_after_featured_word">Unlimited
+                                                        Internet Access</p>
+                                                </div>
+                                            </div> <!-- eof .intro_layers -->
+                                        </div> <!-- eof .intro_layers_wrapper -->
+                                    </div> <!-- eof .col-* -->
+                                </div><!-- eof .row -->
+                            </div><!-- eof .container -->
+                        </li>
+                        <li class="ds slide2">
+                            <img src="images/slide02.jpg" alt="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="intro_layers_wrapper">
+                                            <div class="intro_layers">
+                                                <div class="intro_layer" data-animation="fadeInRight">
+                                                    <h1 class="slide2 intro_featured_word">
+                                                        Access<br>the<br>Best<br>ICT Services" </h1>
+
+                                                    <h5 class="intro_before_featured_word text-uppercase fw-200">
+                                                        We build it<br>Small? Medium? Enterprise?
+                                                    </h5>
+                                                </div>
+                                                <div class="intro_layer" data-animation="fadeInUp">
+                                                    <p class="text-uppercase intro_after_featured_word">24/7 power
+                                                        supply</p>
+                                                </div>
+                                            </div> <!-- eof .intro_layers -->
+                                        </div> <!-- eof .intro_layers_wrapper -->
+                                    </div> <!-- eof .col-* -->
+                                </div><!-- eof .row -->
+                            </div><!-- eof .container -->
+                            <div class="social-flex">
+                                <p class="social-heading">
+                                    follow
+                                </p>
+                                <p class="social-icons">
+                                    <a href="" target="_blank" class="fa fa-facebook color-white" title="facebook"></a>
+                                    <a href="" target="_blank" class="fa fa-twitter color-white" title="twitter"></a>
+                                    <a href="" target="_blank" class="fa fa-instagram color-white"
+                                        title="instagram"></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ds slide3">
+                            <img src="images/slide03.jpg" alt="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="intro_layers_wrapper">
+                                            <div class="intro_layers">
+                                                <div class="intro_layer" data-animation="fadeInRight">
+                                                    <h1 class="slide2 intro_featured_word">
+                                                        No<br>borders to<br>our<br>services</h1>
+                                                    <h5 class="intro_before_featured_word text-uppercase fw-200">
+                                                        IT Service<br>Consulting Firm
+                                                    </h5>
+                                                </div>
+                                                <div class="intro_layer" data-animation="fadeInUp">
+                                                    <p class="text-uppercase intro_after_featured_word">Use Our Space as
+                                                        a Mailing Address</p>
+                                                </div>
+                                            </div> <!-- eof .intro_layers -->
+                                        </div> <!-- eof .intro_layers_wrapper -->
+                                    </div> <!-- eof .col-* -->
+                                </div><!-- eof .row -->
+                            </div><!-- eof .container -->
+                        </li>
+                    </ul>
+                </div> <!-- eof flexslider -->
+                <div class="ds social-flex">
+                    <p class="social-heading">
+                        follow
+                    </p>
+                    <p class="social-icons">
+                        <a href="" target="_blank" class="fa fa-facebook color-white" title="facebook"></a>
+                        <a href="" target="_blank" class="fa fa-twitter color-white" title="twitter"></a>
+                        <a href="" target="_blank" class="fa fa-instagram color-white" title="instagram"></a>
+                    </p>
+                </div>
+                <div class="arrow">
+                    <img src="images/bottom.png" alt="">
+                </div>
+                <div class="animated-arrow">
+                    <a href="#service">
+                        <div class="mouse_scroll">
+                            <span class=""><i class="color-main fas fa-angle-double-down fa-2x unu"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            {{!-- Brief Info on services --}}
+
+            <section
+                class="ls ms s-pt-80 s-pb-50 s-pt-lg-120 s-pb-lg-90 s-pt-xl-160 s-pb-xl-130 c-gutter-30 c-mb-30 service-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 text-lg-left">
+                            <h5 class="special-heading">Check out</h5>
+                            <h3 class="text-uppercase">our Services</h3>
+                        </div>
+                    </div>
+                    <div class="row" id="service">
+
+                        <div class="col-lg-4 col-sm-6">
+
+                            <div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+                                style="min-height: 100%;">
+                                <div class="item-media shadow">
+                                    <img src="images/gallery/01.jpg" alt="">
+                                    <div class="media-links">
+                                        <a class="abs-link" data-toggle="tooltip" title="Consultant Services"
+                                            href="/"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="service-title">
+                                        <a href="/">Consultancy</a>
+                                    </h5>
+
+                                    <p> We are not just professionals, we are ever ready to offer a professional ICT
+                                        consultant service
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div><!-- .col-* -->
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+                                style="min-height: 100%;">
+                                <div class="item-media shadow">
+                                    <img src="images/gallery/02.jpg" alt="">
+                                    <div class="media-links">
+                                        <a class="abs-link" data-toggle="tooltip" title="Mobile & Web Solutions"
+                                            href="/"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="service-title">
+                                        <a href="/">Mobile & Web Solutions</a>
+                                    </h5>
+
+                                    <p>
+                                        Need a Mobile Solution, Website or Web Application? We offer the best
+                                        application develop
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div><!-- .col-* -->
+                        <div class="col-lg-4 col-sm-6">
+
+                            <div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+                                style="min-height: 100%;">
+                                <div class="item-media shadow">
+                                    <img src="images/gallery/03.jpg" alt="">
+                                    <div class="media-links">
+                                        <a class="abs-link" data-toggle="tooltip" title="System Integration"
+                                            href="/"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="service-title">
+                                        <a href="/">System Integration</a>
+                                    </h5>
+
+                                    <p>
+                                        Integrating 3rd Party Applications into your portfolio has never been easier, To
+                                        improve productivity and quality of your operations.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div><!-- .col-* -->
+                        <div class="col-lg-4 col-sm-6">
+
+                            <div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+                                style="min-height: 100%;">
+                                <div class="item-media shadow">
+                                    <img src="images/gallery/04.jpg" alt="">
+                                    <div class="media-links">
+                                        <a class="abs-link" title="Enterprise Applications" data-toggle="tooltip"
+                                            href="/"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="service-title">
+                                        <a href="/">Enterprise Applications</a>
+                                    </h5>
+
+                                    <p>
+                                        We offer software solutions that provide business logic and tools to model
+                                        entire business process for organisations to improve productivity and
+                                        efficiency.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div><!-- .col-* -->
+                        <div class="col-lg-4 col-sm-6">
+
+                            <div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+                                style="min-height: 100%;">
+                                <div class="item-media shadow">
+                                    <img src="images/gallery/05.jpg" alt="">
+                                    <div class="media-links">
+                                        <a class="abs-link" title="Cloud Services" data-toggle="tooltip" href="/"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="service-title">
+                                        <a href="/">Cloud Services</a>
+                                    </h5>
+
+                                    <p>
+                                        Every Business Need a Cloud service, These services are designed to provide
+                                        easy, affordable access to applications and resources, without the need for
+                                        internal infrastructure or hardware.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div><!-- .col-* -->
+                        <div class="col-lg-4 col-sm-6">
+
+                            <div class="vertical-item rounded rounded-image-top hero-bg content-padding padding-small text-center"
+                                style="min-height: 100%;">
+                                <div class="item-media shadow">
+                                    <img src="images/gallery/06.jpg" alt="">
+                                    <div class="media-links">
+                                        <a class="abs-link" title="Training and Knowledge Transfer"
+                                            data-toggle="tooltip" href="/"></a>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="service-title">
+                                        <a href="/">IO Academy</a>
+                                    </h5>
+
+                                    <p>
+                                        IO Academy is a Training and Knowledge Transfer, With a team of multi-talented
+                                        individuals, we also provide trainings to interested parties on varieties of
+                                        Packages.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div><!-- .col-* -->
+                    </div>
+                </div>
+            </section>
+            {{!-- Brief info on services ends here --}}
+
+
+            {{!-- Brief info on work space--}}
+
+            <section
+                class="ls s-pt-80 s-pb-50 s-pt-lg-120 s-pb-lg-90 s-pt-xl-80 s-pb-xl-50 c-gutter-30 c-mb-30 service-page3 ml">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 text-lg-left">
+                            <h5 class="special-heading">Check out our</h5>
+                            <h3 class="text-uppercase">Co-working</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="item-content hero-bg rounded rounded-image-top">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://res.cloudinary.com/first-pavilion/image/upload/c_scale,w_1429,f_auto/v1594213248/pavilion_website/IMG_3420_fyxlra.jpg"
+                                                class="d-block w-100" alt="co-working space image"
+                                                style="background-position: top;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://res.cloudinary.com/first-pavilion/image/upload/c_scale,w_1429,f_auto/v1594213281/pavilion_website/IMG_3430_p7kzez.jpg"
+                                                class="d-block w-100" alt="co-working space image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://res.cloudinary.com/first-pavilion/image/upload/c_scale,w_1429,f_auto/v1594213284/pavilion_website/IMG_3443_qakpct.jpg "
+                                                class="d-block w-100" alt="co-working space image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <p class="intro_before_featured_word text-uppercase font-weight-bold">
+                                        Co-working Space are a great alternative for start-ups, small to mid-size
+                                        businesses or those who want an interactive environment with like minded
+                                        business people.
+                                    </p>
+
+                                    <p>
+                                        Flexible co-working space with daily drop in or hot desking and permanent desks
+                                        to rent on a month-to-month basis. Access to communal spaces, meeting rooms,
+                                        business grade wifi and networking events.
+                                    </p>
+                                    <p>
+                                        Whether you're a freelancer, a startup, or a solo-preneur, our co-working space
+                                        are the ideal environment for your growing business
+                                    </p>
+                                    <ul class="list1 font-weight-normal">
+                                        <li>
+                                            Unlimited Internet
+                                        </li>
+                                        <li>
+                                            24/7 Power Supply
+                                        </li>
+                                        <li>
+                                            Free coffee
+                                        </li>
+                                        <li>
+                                            Movie Nights
+                                        </li>
+                                        <li>
+                                            After Hour Gaming Session
+                                        </li>
+                                        <li>
+                                            Meetups and Hangouts
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+
+                            <div class="accordion" id="accordionExample" role="tablist">
+
+                                <div class="card shadow-none">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <i class="fa fa-laptop"></i>
+                                                Co-working Space
+                                            </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="media">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="media-left">
+                                                            <a href="services3.html#">
+                                                                <img src="https://res.cloudinary.com/first-pavilion/image/upload/c_scale,w_1429,f_auto/v1594213287/pavilion_website/IMG_3444_ahm2zt.jpg"
+                                                                    class="w-100" alt="Co-working space image"
+                                                                    style="min-width: 30vh;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="media-body">
+                                                            Exquisitely designed, well-equipped offices, cost saving and
+                                                            convenience...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card shadow-none">
+                                    <div class="card-header" id="headingTwo" role="tab">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                <i class="fab fa-hubspot"></i>
+                                                Innovation Hub
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="media">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="media-body">
+                                                            Looking to get your new startup off the ground? Our space
+                                                            are designed for Start ups, small and medium scale
+                                                            Enterprise...
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <div class="media-left">
+                                                            <a href="services3.html#">
+                                                                <img src="image/innovation.jpg" class="w-100" alt=""
+                                                                    style="min-width: 30vh;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card shadow-none">
+                                    <div class="card-header" id="headingThree" role="tab">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                <i class="fas fa-users"></i>
+                                                Meet Ups
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="media">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="media-left">
+                                                            <a href="services3.html#">
+                                                                <img src="image/meet-up.jpg" class="w-100" alt=""
+                                                                    style="min-width: 30vh;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <div class="media-body">
+                                                            Planning a tech meet-up? Our space got you covered, looking
+                                                            for a convenience environment...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="service-info hero-bg p-30">
+                                <p class="icon-inline d-flex">
+                                    <span class="icon-styled color-main mb-4">
+                                        <i class="fa fa-map-marker"></i>
+                                    </span>
+                                    <span>4, Law castle 3rd Floor opposite Fidelity Bank, Agboole Aro, Omida, Abeokuta,
+                                        Ogun State</span>
+                                </p>
+
+                                <p class="icon-inline">
+                                    <span class="icon-styled color-main">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <a href="tel:+2349020455349">+234 902 045 5349</a>
+                                </p>
+
+                                <p class="icon-inline">
+                                    <span class="icon-styled color-main">
+                                        <i class="fa fa-pen"></i>
+                                    </span>
+                                    <a href="mailto:info@firstpavitech.com">info@firstpavitech.com</a>
+                                </p>
+                            </div>
+
+                            <div class="ls ms my-30 p-30">
+                                <button id="contact_form_submit" class="btn-maincolor form-control rounded">More
+                                    Information</button>
+                            </div>
+
+                        </div>
+                        <div class="d-none d-lg-block divider-20"></div>
+                    </div>
+                </div>
+            </section>
+            {{!-- end of workspace info --}}
+
+            {{!-- Testimonies --}}
+            <section class="s-pt-75 s-pb-60 s-pb-md-80 s-py-lg-120 s-pt-xl-155 s-pb-xl-160 ls bg-maincolor"
+                id="testimonials">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <h5 class="special-heading">Our Happy customers</h5>
+                                <h3 class="text-uppercase">Testimonies</h3>
+                            </div>
+                            <div class="testimonials-slider owl-carousel text-white" data-autoplay="false"
+                                data-loop="false" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1"
+                                data-nav="false" data-dots="true">
+                                <div class="quote-item">
+                                    <div class="quote-image">
+                                        <img src="images/team/testimonials_01.jpg" alt="">
+                                    </div>
+                                    <div class="quote-inner">
+                                        <p class="small-text quote-meta text-white">
+                                            Gregory D. Grey, Client
+                                        </p>
+                                        <p class="quote-content  text-white">
+                                            We had hughesnet for ages and were completely unhappy with it. We switched
+                                            to MaxiCom and have never looked back. We are much much happier!
+                                        </p>
+                                        <div class="quote-signature">
+                                            <img class="signature" src="images/testimonial-sign-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quote-item">
+                                    <div class="quote-image">
+                                        <img src="images/team/testimonials_02.jpg" alt="">
+                                    </div>
+                                    <div class="quote-inner">
+                                        <p class="small-text quote-meta text-white">
+                                            Betsy R. Donley, Client
+                                        </p>
+                                        <p class="quote-content text-white">
+                                            I have been a client of MaxiCom for several years. They provide an excellent
+                                            service at an amazingly great price. I tell my friends about a great
+                                            service.
+                                        </p>
+                                        <div class="quote-signature">
+                                            <img class="signature" src="images/testimonial-sign-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quote-item">
+                                    <div class="quote-image">
+                                        <img src="images/team/testimonials_03.jpg" alt="">
+                                    </div>
+                                    <div class="quote-inner">
+                                        <p class="small-text quote-meta text-white">
+                                            Gregory D. Grey, Client
+                                        </p>
+                                        <p class="quote-content text-white">
+                                            Have had their service for over 1 year, completely trouble free. Installers
+                                            were a pleasure to deal with. Installation was actually less than estimate.
+                                        </p>
+                                        <div class="quote-signature">
+                                            <img class="signature" src="images/testimonial-sign-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .testimonials-slider -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {{!-- end of Testimonies --}}
+
+            {{!-- Beleful Advert --}}
+
+            <section class="ls s-pb-80 s-pb-lg-120 s-pb-xl-160 devices-section overflow-visible" id="features">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                            <img src="https://pngimage.net/wp-content/uploads/2018/06/mee-kari-png-2.png" width="350"
+                                alt="">
+                            <div class="divider-50"></div>
+                            <h5 class="special-heading text-center mb-5">just 30 minute</h5>
+                            <a href="/beleful"><img src="image/beleful.png" width="250" class="" alt=""></a>
+                            {{!-- <h1 class="text-center">Beleful</h1> --}}
+                            <p class="text-center big">Get your favourite meal delivered to your door step with just one
+                                click</p>
+                            <div class="divider-50 d-none d-md-block"></div>
+                            <div class="row c-mt-30">
+                                <div class="col-md-3">
+                                    <img src="image/food2.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-md-3 offset-6">
+                                    <img src="image/food1.png" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <a class="btn btn-google" href="index.html#" title="Google Play">Google Play</a>
+                                <a class="btn btn-apple" href="index.html#" title="Apple Store">Apple Store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider-80 d-none d-xl-block"></div>
+            </section>
+
+            {{!-- beleful advert ends here --}}
+
+            {{!--  Google map embeded --}}
+            <section class="ls ms map-section s-pt-40 s-pb-30 s-pt-lg-100 s-pb-lg-90" id="location">
+
+                <div class="page_map">
+                    <div class="mapouter">
+                        <iframe class="w-100" height="600" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=first%20pavilion%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                    </div>
+                </div>
+                <div class="container c-mt-50 ">
+                    <div class="divider-10"></div>
+                    <div class="row text-center text-md-left">
+                        <div class="col-12 col-lg-4 mb-5">
+                            <h5 class="special-heading text-center text-lg-left">Abeokuta</h5>
+                            <h3 class="text-center text-lg-left text-uppercase">Cover Map</h3>
+                        </div>
+                        <div class="divider-15 d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </section>
+            {{!--  Google map embeded end --}}
+
+            <section
+                class="ds s-pt-70 s-pb-80 s-pt-lg-80 s-pb-lg-80 s-pt-xl-80 s-pb-xl-80 background-gradient2 about-section cover-background"
+                id="about">
+                <div class="container">
+                    <div class="d-block d-lg-none divider-5"></div>
+                    <div class="row c-gutter-60 align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-lg-6 col-xs-12 order-2 order-lg-1 animate"
+                            data-animation="fadeInLeftBig">
+                            <div class="side-image">
+                                <img src="images/about-image.png" width="880" alt="">
+                                <div class="d-block d-lg-none divider-10"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-lg-6 col-xs-12 order-1 order-lg-2">
+                            <div class="item-content text-center text-lg-left">
+                                <h5 class="fw-200 text-uppercase">yharah</h5>
+                                <h3>#Let us deliver your package</h3>
+                                <ul>
+                                    <li>Groceries Shopping</li>
+                                    <li>Pick Ups & Drop offs</li>
+                                    <li>General Errands</li>
+                                </ul>
+                                <div class="d-flex justify-content-between mt-50">
+                                    <a class="btn btn-white" href="index.html"><span>Know more</span></a>
+                                    <img src="images/signature2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block divider-35"></div>
+            </section>
+
+            <section class="ls ms s-pt-80 s-pb-20 s-pt-lg-100 s-pb-lg-50 s-pt-xl-150 s-pb-xl-80 c-gutter-60 c-mb-50"
+                id="advantage">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2" id="price">
+                            <h5 class="special-heading text-center mb-2">Become An ICT Expert At</h5>
+                            <h1 class="text-center">IO Academy</h1>
+                            <p class="text-center big">Join Our Training Sessions and Build your expertise, Best Student
+                                Gets an Internship with First Pavilion</p>
+                        </div>
+                        <div class="col-lg-4">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="s-pb-50 s-pb-lg-80 s-pb-xl-100 ls blog-carousel overflow-visible" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="owl-carousel min-height" data-autoplay="true" data-loop="true"
+                                data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2" data-nav="false"
+                                data-dots="false" data-margin="60">
+                                <article
+                                    class="vertical-item text-center text-md-left post type-post status-publish format-standard has-post-thumbnail">
+                                    <div class="item-media post-thumbnail">
+                                        <div class="item-media" data-toggle="modal" data-target="#modalYT">
+                                            <img src="image/embedded.jpg" alt="robotic">
+                                            <div class="media-links">
+                                                <a class="abs-link" title=""></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- .post-thumbnail -->
+                                    <div class="item-content">
+                                        <header class="entry-header">
+                                            <h6>
+                                                Robotics and Embedded System
+                                            </h6>
+
+                                        </header>
+                                        <!-- .entry-header -->
+                                    </div><!-- .item-content -->
+                                </article><!-- #post-## -->
+                                <article
+                                    class="vertical-item text-center text-md-left post type-post status-publish format-standard has-post-thumbnail">
+                                    <div class="item-media post-thumbnail">
+                                        <div class="item-media" data-toggle="modal" data-target="#modalYT">
+                                            <img src="image/mobile.jpg" alt="">
+                                            <div class="media-links">
+                                                <a class="abs-link" title=""></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- .post-thumbnail -->
+                                    <div class="item-content">
+                                        <header class="entry-header">
+                                            <h6>
+                                                Mobile application Development
+                                            </h6>
+
+                                        </header>
+                                        <!-- .entry-header -->
+                                    </div><!-- .item-content -->
+                                </article><!-- #post-## -->
+                                <article
+                                    class="vertical-item text-center text-md-left post type-post status-publish format-standard has-post-thumbnail">
+                                    <div class="item-media post-thumbnail">
+                                        <div class="item-media" data-toggle="modal" data-target="#modalYT">
+                                            <img src="image/vr.jpg" alt="">
+                                            <div class="media-links">
+                                                <a class="abs-link" title=""
+                                                    ></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- .post-thumbnail -->
+                                    <div class="item-content">
+                                        <header class="entry-header">
+                                            <h6>
+                                                Augmented Reality (AR) / Virtual Reality (VR)
+                                            </h6>
+
+                                        </header>
+                                        <!-- .entry-header -->
+                                    </div><!-- .item-content -->
+                                </article><!-- #post-## -->
+                                <article
+                                    class="vertical-item text-center text-md-left post type-post status-publish format-standard has-post-thumbnail">
+                                    <div class="item-media post-thumbnail">
+                                        <div class="item-media" data-toggle="modal" data-target="#modalYT">
+                                            <img src="image/robotic.jpg" alt="">
+                                            <div class="media-links">
+                                                <a class="abs-link" title=""></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- .post-thumbnail -->
+                                    <div class="item-content">
+                                        <header class="entry-header">
+                                            <h6>
+                                                Artificial Intelligence
+                                            </h6>
+
+                                        </header>
+                                        <!-- .entry-header -->
+                                    </div><!-- .item-content -->
+                                </article><!-- #post-## -->
+                                <article
+                                    class="vertical-item text-center text-md-left post type-post status-publish format-standard has-post-thumbnail">
+                                    <div class="item-media post-thumbnail">
+                                        <div class="item-media" data-toggle="modal" data-target="#modalYT">
+                                            <img src="image/gaming.jpg" alt="">
+                                            <div class="media-links">
+                                                <a class="abs-link" title=""></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- .post-thumbnail -->
+                                    <div class="item-content">
+                                        <header class="entry-header">
+                                            <h6>
+                                                 Game Development
+                                            </h6>
+
+                                        </header>
+                                        <!-- .entry-header -->
+                                    </div><!-- .item-content -->
+                                </article><!-- #post-## -->
+                                <article
+                                    class="vertical-item text-center text-md-left post type-post status-publish format-standard has-post-thumbnail">
+                                    <div class="item-media post-thumbnail">
+                                        <div class="item-media" data-toggle="modal" data-target="{{emaily}}">
+                                            <img src="image/web.jpg" alt="">
+                                            <div class="media-links">
+                                                <a class="abs-link" title="click" data-toggle="tooltip"></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- .post-thumbnail -->
+                                    <div class="item-content">
+                                        <header class="entry-header">
+                                            <h6>
+                                                Web Development
+                                            </h6>
+                                            <!-- .entry-meta -->
+                                        </header>
+                                        <!-- .entry-header -->
+                                    </div><!-- .item-content -->
+                                </article><!-- #post-## -->
+                            </div><!-- .Io academy slide-slider -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- modal for io academy-->
+            <!--Modal: modalYT-->
+            <div class="modal fade" id="{{emaily}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                    <!--Content-->
+                    <div class="modal-content text-center">
+
+                        <!--Body-->
+                        <div class="modal-body mb-0 p-0">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <img src="image/web.jpg" class="embed-responsive-item" alt="">
+                            </div>
+                            <div class="float-right mt-3">
+                                <a class="activator waves-effect waves-light mr-4">
+                                    <!-- Social shares button -->
+                                    <i class="fas fa-share-alt"></i>
+                                </a>
+                            </div>
+                            <!-- Card content -->
+                            <div class="container mt-3">
+                                <h5>Web Development</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis molestiae saepe enim
+                                    quisquam inventore voluptas
+                                    minima dolorem esse quam doloribus ab rerum consequatur quo unde culpa, quaerat
+                                    illum beatae provident!</p>
+                                <a href="" class="float-right">Know More <i class="fas fa-angle-double-right"></i></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--/.Content-->
+
+                </div>
+            </div>
+            <!--Modal: modalYT-->
+
+            <footer
+                class="page_footer ls ms s-pt-80 s-pb-70 s-py-lg-120 s-pt-xl-135 s-pb-xl-105 c-gutter-60 text-center text-md-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="divider-20 d-none d-xl-block"></div>
+                        <div class="col-md-5 animate" data-animation="fadeInUp">
+                            <div class="widget widget_text">
+                                <img src="image/fp-logo-footer.png" width="40%" alt="FirstPavilionLogo">
+                                <p>
+                                    We are a modern Information and Communication Technology Company with qualified and
+                                    friendly staff capable of turning your ICT issues into the futuristic innovation you
+                                    have in mind.
+                                </p>
+                                <p>We offer various services ranging from ICT consultancy to Software services.</p>
+                                <div class="widget widget_social_buttons">
+                                    <a href="https://facebook.com/firstpavilionng" target="_blank" title="facebook"
+                                        data-toggle="tooltip">
+                                        <i class="fab fa-facebook text-primary rounded-icon mr-5"></i>
+                                    </a>
+                                    <a href="https://twitter.com/@firstpavilionng" target="_blank" title="twitter"
+                                        data-toggle="tooltip">
+                                        <i class="fab fa-twitter text-info rounded-icon mr-5"></i>
+                                    </a>
+                                    <a href="https://instagram.com/firstpavilionng" target="_blank" title="instagram"
+                                        data-toggle="tooltip">
+                                        <i class="fab fa-instagram text-danger rounded-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 animate" data-animation="fadeInUp">
+                            <div class="widget services-links">
+                                <h4 class="widget-title">Services</h4>
+                                <ul>
+                                    <li class="cat-item">
+                                        <i class="fas fa-check text-info mr-3"></i>
+                                        <a href="/space">Co-working space</a>
+                                    </li>
+                                    <li class="cat-item">
+                                        <i class="fas fa-check text-info mr-3"></i>
+                                        <a href="/beleful">Beleful</a>
+                                    </li>
+                                    <li class="cat-item">
+                                        <i class="fas fa-check text-info mr-3"></i>
+                                        <a href="/yharah">yharah</a>
+                                    </li>
+                                    <li class="cat-item">
+                                        <i class="fas fa-check text-info mr-3"></i>
+                                        <a href="/academy">IO Academy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 animate" data-animation="fadeInUp">
+                            <div class="widget widget_icons_list">
+                                <h4 class="widget-title">Call Us</h4>
+                                <p>
+                                    <a href="tel:+2349020455349">{{pavInfo.phone}}</a>
+                                </p>
+                                <a href="mailto:info@firstpavitech.com" class="small-text">
+                                    <i class="fas fa-envelope color-main fs-14"></i>
+                                    Email us
+                                </a>
+                                <h4 class="widget-title">Visit Us</h4>
+                                <p>4, Law castle 3rd Floor opposite Fidelity Bank, Agboole Aro, Omida, Abeokuta, Ogun
+                                    State</p>
+                                <a href="#location" class="small-text">
+                                    <i class="fa fa-map-marker color-main3 fs-14"></i>
+                                    Get Direction
+                                </a>
+                            </div>
+                            <div class="divider-45 d-none d-md-block d-xlz-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <section class="page_copyright ds s-py-10 copyright-bg">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="divider-15 d-none d-lg-block"></div>
+                        <div class="col-md-12 text-center">
+                            <p>&copy; Copyright <span class="copyright_year" id="yr"></span> All Rights Reserved</p>
+                        </div>
+                        <div class="divider-15 d-none d-lg-block"></div>
+                    </div>
+                </div>
+            </section>
+        </div><!-- eof #box_wrapper -->
+    </div><!-- eof #canvas -->
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    {{!-- This is font awesome cdn --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script src="js/footerFullYr.js"></script>
+    {{!-- custom CSS --}}
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/switcher.js"></script>
+
+    <!-- Google Map Script -->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyvMt2LuE6NLg4NfNoPZ_qzhDM3cyqhXs&callback=initGoogleMap"></script>
+
+    </script>
+
+</body>
+
+</html>

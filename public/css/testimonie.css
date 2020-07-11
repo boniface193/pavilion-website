@@ -1,0 +1,27 @@
+.owl-carousel .owl-dots .owl-dot:after {
+    color: #fff;
+    content: counter(number, decimal-leading-zero);
+    counter-increment: number;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+.owl-carousel .owl-dots .owl-dot.active:after {
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    height: 40px;
+    zoom: 1;
+}
+
+img.signature{
+    color: #fff;
+}
+
+.min-height{
+    min-height: 10vh;
+    min-width: 10vh;
+}
